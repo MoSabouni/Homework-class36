@@ -46,3 +46,8 @@ ex6-totalCost.js
 2022-02-14 10:31:50 info: ----------------------------------------
 2022-02-14 10:31:54 info: All unit tests passed.
 2022-02-14 10:32:00 info: All steps were completed successfully
+2022-02-15 12:34:44 info: -------------------------------------------
+2022-02-15 12:34:44 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2022-02-15 12:34:44 info: -------------------------------------------
+2022-02-15 12:34:48 info: All unit tests passed.
+2022-02-15 12:34:54 info: All steps were completed successfully
