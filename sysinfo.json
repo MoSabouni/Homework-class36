@@ -1,0 +1,37 @@
+{
+  "node": "v17.4.0",
+  "system": {
+    "manufacturer": "ASUSTeK COMPUTER INC.",
+    "model": "N550JK"
+  },
+  "cpu": {
+    "manufacturer": "Intel®",
+    "brand": "Core™ i7-4700HQ",
+    "speed": 2.4
+  },
+  "memory": "8 GB",
+  "osInfo": {
+    "platform": "Windows",
+    "distro": "Microsoft Windows 10 Pro",
+    "release": "10.0.19043"
+  },
+  "vscodeInfo": {
+    "version": "1.64.2",
+    "extensions": [
+      "aaron-bond.better-comments",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "formulahendry.code-runner",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker"
+    ],
+    "userSettings": {}
+  }
+}
