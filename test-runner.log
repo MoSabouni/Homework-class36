@@ -85,3 +85,16 @@ ex6-totalCost.js
 
 ex6-totalCost.js:28:3 - Unknown word (bitterballen)
 
+2022-02-15 07:15:50 info: -------------------------------------------
+2022-02-15 07:15:50 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2022-02-15 07:15:50 info: -------------------------------------------
+2022-02-15 07:15:50 warn: A unit test file was not provided.
+2022-02-15 07:15:52 error: *** ESLint Report ***
+
+ex7-mindPrivacy.js
+  34:7  warning  'newArray' is never reassigned. Use 'const' instead  no-autofix/prefer-const
+  41:3  error    Unreachable code                                     no-unreachable
+
+✖ 2 problems (1 error, 1 warning)
+
+
