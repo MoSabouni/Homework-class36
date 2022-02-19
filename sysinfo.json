@@ -1,0 +1,42 @@
+{
+  "node": "v16.14.0",
+  "system": {
+    "manufacturer": "Apple Inc.",
+    "model": "MacBookAir7,2"
+  },
+  "cpu": {
+    "manufacturer": "Intel®",
+    "brand": "Core™ i5-5250U",
+    "speed": 1.6
+  },
+  "memory": "8 GB",
+  "osInfo": {
+    "platform": "darwin",
+    "distro": "macOS",
+    "release": "11.6.1"
+  },
+  "vscodeInfo": {
+    "version": "1.63.2",
+    "extensions": [
+      "aaron-bond.better-comments",
+      "bbenoist.shell",
+      "bierner.github-markdown-preview",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-footnotes",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "formulahendry.code-runner",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker",
+      "WallabyJs.quokka-vscode"
+    ],
+    "userSettings": {
+      "editor.formatOnSave": true
+    }
+  }
+}
