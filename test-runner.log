@@ -44,3 +44,51 @@ ex1-doubleEvenNumbers.test.js
 2022-02-21 09:05:54 info: ------------------------------------------------------
 2022-02-21 09:05:58 info: All unit tests passed.
 2022-02-21 09:06:03 info: All steps were completed successfully
+2022-02-21 09:47:21 info: -------------------------------------------------
+2022-02-21 09:47:21 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-02-21 09:47:21 info: -------------------------------------------------
+2022-02-21 09:47:25 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex2-mondaysWorth.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js
+  computeEarnings
+    ✓ should take two parameters (4 ms)
+    ✕ should compute the earnings as a formatted Euro amount (11 ms)
+
+  ● computeEarnings › should compute the earnings as a formatted Euro amount
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "€187.50"
+    Received: undefined
+
+      47 |     const result = computeEarnings(mondayTasks, hourlyRate);
+      48 |     const expected = '€187.50';
+    > 49 |     expect(result).toBe(expected);
+         |                    ^
+      50 |   });
+      51 | });
+      52 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex2-mondaysWorth.test.js:49:20)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.921 s
+Ran all test suites matching /ex2-mondaysWorth.test.js/i.
+2022-02-21 09:47:28 error: *** ESLint Report ***
+
+ex2-mondaysWorth.test.js
+  34:26  error  'dayTasks' is defined but never used    no-unused-vars
+  34:36  error  'payPerHour' is defined but never used  no-unused-vars
+
+✖ 2 problems (2 errors, 0 warnings)
+
+
+2022-02-21 10:21:02 info: Disclaimer turned off
+2022-02-21 10:21:12 info: -------------------------------------------------
+2022-02-21 10:21:12 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2022-02-21 10:21:12 info: -------------------------------------------------
+2022-02-21 10:21:16 info: All unit tests passed.
+2022-02-21 10:21:21 info: All steps were completed successfully
