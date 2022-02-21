@@ -1,0 +1,46 @@
+2022-02-21 08:56:22 info: ------------------------------------------------------
+2022-02-21 08:56:22 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-02-21 08:56:22 info: ------------------------------------------------------
+2022-02-21 08:56:28 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex1-doubleEvenNumbers.test.js --colors
+ FAIL  1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js
+  ✕ doubleEvenNumbers should take the even numbers and double them (6 ms)
+
+  ● doubleEvenNumbers should take the even numbers and double them
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: [4, 8]
+    Received: undefined
+
+      28 |   const actual = doubleEvenNumbers([1, 2, 3, 4]);
+      29 |   const expected = [4, 8];
+    > 30 |   expect(actual).toEqual(expected);
+         |                  ^
+      31 | });
+      32 |
+
+      at Object.<anonymous> (1-JavaScript/Week4/homework/ex1-doubleEvenNumbers.test.js:30:18)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        0.912 s
+Ran all test suites matching /ex1-doubleEvenNumbers.test.js/i.
+2022-02-21 08:56:30 error: *** ESLint Report ***
+
+ex1-doubleEvenNumbers.test.js
+  13:28  error    'numbers' is defined but never used                          no-unused-vars
+  17:51  warning  Results from `map` are unused. Replace `map` with `forEach`  no-restricted-syntax
+  17:51  error    Results from `map` are unused. Replace `map` with `forEach`  hyf/use-map-result
+  18:3   warning  Remove commented-out code                                    hyf/no-commented-out-code
+
+✖ 4 problems (2 errors, 2 warnings)
+
+
+2022-02-21 09:05:54 info: ------------------------------------------------------
+2022-02-21 09:05:54 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2022-02-21 09:05:54 info: ------------------------------------------------------
+2022-02-21 09:05:58 info: All unit tests passed.
+2022-02-21 09:06:03 info: All steps were completed successfully
