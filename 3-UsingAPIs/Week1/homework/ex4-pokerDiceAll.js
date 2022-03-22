@@ -27,9 +27,11 @@ exercise file.
 const rollDie = require('../../helpers/pokerDiceRoller');
 
 function rollDice() {
-  // TODO Refactor this function
   const dice = [1, 2, 3, 4, 5];
-  return rollDie(1);
+  const promisesArray = dice.map((num) => {
+    return rollDie(num);
+  });
+  return Promise.all(promisesArray);
 }
 
 function main() {
@@ -43,3 +45,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// The reason why they keep going after rejection is because they are called asynchronously and even if one promise rejected the functions keep going on but when we have to resolve all it cant resolve unless all promises are resolved but rejecetion could happen with the second promise while other promises were alraedy called
