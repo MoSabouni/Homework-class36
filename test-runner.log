@@ -194,3 +194,8 @@ ex3-rollAnAce.js
 2022-03-29 02:47:26 info: -----------------------------------------
 2022-03-29 02:47:29 info: All unit tests passed.
 2022-03-29 02:47:32 info: All steps were completed successfully
+2022-03-29 03:13:41 info: ----------------------------------------
+2022-03-29 03:13:41 info: >>> Running Unit Test `ex4-diceRace` <<<
+2022-03-29 03:13:41 info: ----------------------------------------
+2022-03-29 03:13:44 info: All unit tests passed.
+2022-03-29 03:13:47 info: All steps were completed successfully
