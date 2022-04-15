@@ -33,3 +33,5 @@ if (process.env.NODE_ENV !== 'test') {
   main();
 }
 module.exports = rollDice;
+
+// Anser : It is because promise.race calls all the functions asynchronously and even if the first promise was resolved the other functions were still called and they will continue, although the promise is resolved.

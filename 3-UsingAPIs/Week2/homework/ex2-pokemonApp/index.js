@@ -28,16 +28,15 @@ async function fetchData(url) {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
       return data;
     }
     throw new Error(`Request failed.`);
   } catch (error) {
-    console.log(error.message);
+    console.error(error.message);
   }
 }
 
-async function fetchAndPopulatePokemons(data) {
+async function fetchAndPopulatePokemons() {
   const button = document.createElement('button');
   button.classList.add('button');
   button.textContent = 'Get Pokemon!';
@@ -47,7 +46,15 @@ async function fetchAndPopulatePokemons(data) {
   const selectElement = document.createElement('select');
   selectElement.classList.add('selectElement');
   document.body.appendChild(selectElement);
-  button.addEventListener('click', () => {
+  let data;
+  button.addEventListener('click', async () => {
+    try {
+      data = await fetchData(
+        `https://pokeapi.co/api/v2/pokemon/?limit=30&offset=30`
+      );
+    } catch (error) {
+      console.error(error.message);
+    }
     const pokemonResults = data.results;
     pokemonResults.forEach((pokemon) => {
       const option = document.createElement('option');
@@ -78,15 +85,8 @@ async function fetchImage(event) {
   }
 }
 
-async function main() {
-  try {
-    const data = await fetchData(
-      `https://pokeapi.co/api/v2/pokemon/?limit=30&offset=30`
-    );
-    fetchAndPopulatePokemons(data);
-  } catch (error) {
-    console.log(error.message);
-  }
+function main() {
+  fetchAndPopulatePokemons();
 }
 
 document.addEventListener('load', main());
